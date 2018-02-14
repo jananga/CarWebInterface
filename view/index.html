@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- <link rel="stylesheet" href="css/priceBar.css" /> -->
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+  <style>
+  
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+  
+  </style>
+
+</head>
+
+<body>
+
+  <!-- navigation Start  altered-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <img class="img img-responsive navbar-brand" src="images/logo.png" />
+
+        <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">Home</a></li> -->
+          <li>
+            <a href="#">
+              <span class="label-allAds">All ads</span>
+            </a>
+          </li>
+          <li>
+            <div class="menu-group">
+              <div class="btn-group">
+                <button type="button" class="btn btn-menu-group">සිංහල</button>
+                <button type="button" class="btn btn-menu-group">தமிழ்</button>
+              </div>
+            </div>
+          </li>
+          <!-- <li>
+            <a href="#">Page 3</a>
+          </li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+          <li>
+            <a href="#">
+              <span class="material-icons">forum</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span>
+              Log in
+            </a>
+          </li>
+          <li>
+            <div class="menu-group">
+              <a type="button" class="btn btn-primary-heading btn-lg">Post Your Ad</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navigation End -->
+
+
+  <div class="container">
+    <div class="secondary-content">
+
+      <!-- Secondrary search menu start -->
+
+      <div class="search-menu-back">
+        <div class="row row-margin">
+          <div class="col-lg-3 pmzero">
+            <button type="button" class="btn btn-ikman button-custom-width">
+              <i class="fas fa-map-marker-alt"></i>
+              Select Location
+            </button>
+          </div>
+          <div class="col-lg-3 pmzero">
+            <button type="button" class="btn btn-ikman button-custom-width">
+              <i class="fas fa-tag"></i>
+              Cars
+            </button>
+          </div>
+          <div class="col-lg-6 pmzero">
+
+            <div class="input-group input-group-search">
+              <input type="text" class="form-control input-search" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-search" type="button">
+                  <i class="fa fa-search fa-fw"></i> Search</button>
+              </span>
+            </div>
+
+            <!-- <button type="button" class="btn btn-ikman button-custom-width">Default</button> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Secondrary search menu end -->
+
+
+  <div class="container">
+
+    <div class="row row-margin-content">
+      <div class="col-lg-3 left-panel">
+
+
+        <!-- drop down select start -->
+        <div class="row">
+          <div class="col-md-12">
+            <fieldset>
+
+              <p class="filter-heading">Sort results by:</p>
+              <hr/>
+              <!-- Select Basic -->
+              <div class="form-group">
+                <div class="col-md-12">
+                  <select id="selectbasic" name="selectbasic" class="form-control">
+                    <option value="date_desc" selected="selected">Date: Newest on top</option>
+                    <option value="date_asc">Date: Oldest on top</option>
+                    <option value="mileage_desc">Mileage: High to Low</option>
+                    <option value="mileage_asc">Mileage: Low to High</option>
+                    <option value="price_desc">Price: High to Low</option>
+                    <option value="price_asc">Price: Low to High</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <!-- drop down select end -->
+
+        <!-- Type of poster start -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <fieldset>
+
+              <p class="filter-heading">Type of poster</p>
+              <hr/>
+
+              <div class="form-group">
+                <div class="col-md-12">
+                  <div class="radio">
+                    <label for="radios-0">
+                      <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> All posters
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label for="radios-1">
+                      <input type="radio" name="radios" id="radios-1" value="2"> Only members
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+
+        <!-- Type of poster end -->
+
+        <!-- price bar start -->
+        <div class="row">
+          <div class="col-md-12">
+
+            <p class="filter-heading">Price Range</p>
+            <hr/>
+            <div class="slidecontainer">
+              <div class="row">
+                <div class="col-sm-2">
+                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                  <!-- <p class="">0 LKR</p> -->
+                </div>
+                <div class="col-sm-8">
+                  <input type="range" min="1" max="1000000" value="50000" class="slider" id="myRange">
+                </div>
+                <div class="col-sm-2">
+                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+                  <!-- <p class="">100k LKR</p> -->
+                </div>
+              </div>
+              <p>Price:
+                <span id="demo"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- price bar end -->
+
+
+        <div class="row">
+          <div class="col-md-12" id="left-panel-acordian">
+            <ul class="nav nav-stacked" id="accordion1">
+              <li class="panel">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink" class="filter-heading">Category</a>
+
+                <ul id="firstLink" class="collapse filter-ul">
+                  <li>
+                    <a href="#">Cars</a>
+                  </li>
+                  <li>
+                    <a href="#">Vans</a>
+                  </li>
+                  <li>
+                    <a href="#">jeeps</a>
+                  </li>
+                  <li>
+                    <a href="#">Moter Bicycles</a>
+                  </li>
+                  <li>
+                    <a href="#">Trishaws</a>
+                  </li>
+
+                </ul>
+
+              </li>
+              <li class="panel">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#secondLink" class="filter-heading">Location</a>
+
+                <ul id="secondLink" class="collapse filter-ul">
+                  <li class="">
+                    <a href="#">Colombo</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Gampaha</a>
+                  </li>
+                  <li class="">
+                    <a href="#">Kurunegala</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Test1</a>
+              </li>
+              <li>
+                <a href="#">Test1</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9">Lorem</div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-9 right-panel">
+        <h3>Column 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+      
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+      </script>
+
+</body>
+
+</html>
