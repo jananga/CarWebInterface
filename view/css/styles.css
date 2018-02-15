@@ -250,6 +250,7 @@ border-top-right-radius: 4px;
 .row-margin-content{
 
     margin: 2px 0px 2px 0px;
+    background-color: rgb(255, 255, 255);
 
 
 }
@@ -315,6 +316,37 @@ border-top-right-radius: 4px;
     background-color: #FFF;
     padding-right: 10px;
     /* margin: 3px 3px; 2px 15px; */
+}
+
+.main-list-div{
+    border: 1px solid #bebebe;
+    margin: 5px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 4px;
+
+}
+
+
+.main-list-div:hover{
+box-shadow: 2px 2px #d4ded9;
+-webkit-box-shadow: 2px 2px #d4ded9;
+}
+
+
+.main-list-heading{
+color: #1f79ba;
+}
+.main-list-price{
+    font-weight: bold;
+}
+.main-list-milage{
+
+    color: #1B876B;
+    font-weight: bold;
+}
+
+.image-align{
+    vertical-align: middle;
 }
 
 /* right panel :end */

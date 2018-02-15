@@ -12,55 +12,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- <link rel="stylesheet" href="css/priceBar.css" /> -->
+  <link rel="stylesheet" href="css/priceBar.css" />
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-
-  <style>
-  
-.slidecontainer {
-    width: 100%;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    
-}
-
-.slider:hover {
-    opacity: 1;
-
-
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 23px;
-    height: 24px;
-    border: 0;
-    background: url('contrasticon.png');
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    width: 23px;
-    height: 24px;
-    border: 0;
-    background: url('contrasticon.png');
-    cursor: pointer;
-}
-  
-  </style>
 
 </head>
 
@@ -234,26 +189,36 @@
 
             <p class="filter-heading">Price Range</p>
             <hr/>
-            <div class="slidecontainer">
-              <div class="row">
-                <div class="col-sm-2">
-                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                  <!-- <p class="">0 LKR</p> -->
-                </div>
-                <div class="col-sm-8">
-                  <input type="range" min="1" max="1000000" value="50000" class="slider" id="myRange">
-                </div>
-                <div class="col-sm-2">
-                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                  <!-- <p class="">100k LKR</p> -->
-                </div>
+            <div class="row">
+              <div class="badgecontainer">
+                <b class="pull-right badgecontainer-span">10</b>
               </div>
-              <p>Price:
-                <span id="demo"></span>
-              </p>
+
+              <div class="slidecontainer">
+                <input type="range" min="1" max="1000000" value="50000" class="slider" id="myRange">
+              </div>
+
+              <div class="badgecontainer">
+                <b class="badgecontainer-span">1kk</b>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- price display start -->
+
+        <div class="row">
+          <div class="col-md-12 price-div">
+
+            <p>Price:
+              <span id="demo"></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- price display end  -->
+
+
         <!-- price bar end -->
 
 
@@ -299,23 +264,118 @@
                 </ul>
               </li>
               <li>
+                <a data-toggle="collapse" data-parent="#accordion1" href="#thirdLink" class="filter-heading">Model Year</a>
+
+                <ul id="thirdLink" class="collapse filter-ul">
+                  <li class="">
+                    <a href="#">2000</a>
+                  </li>
+                  <li class="">
+                    <a href="#">2001</a>
+                  </li>
+                  <li class="">
+                    <a href="#">2002</a>
+                  </li>
+                </ul> 
+              <!-- </li>
+              <li class="panel">
                 <a href="#">Test1</a>
-              </li>
-              <li>
-                <a href="#">Test1</a>
-              </li>
+              </li> -->
             </ul>
           </div>
-          <div class="col-md-9">Lorem</div>
+          <!-- <div class="col-md-9">Lorem</div> -->
         </div>
       </div>
 
 
 
       <div class="col-lg-9 right-panel">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <h5>Showing
+          <span id="menu-page">1-25</span> of
+          <span id="tot-add">58,037</span> ads</h5>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p> -->
+
+        <div class="row main-list-div">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/car1.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="auto">
+              </div>
+              <div class="col-md-8">
+                <h4 class="main-list-heading">Bugatti Veyron EB 16.4</h4>
+                <p class="main-list-milage">25000 km</p>
+                <h5>Colombo Car Association</h5>
+                <p class="main-list-price">Rs. 250,000/=</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row main-list-div">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/car1.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="auto">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="main-list-heading">Bugatti Veyron EB 16.4</h4>
+                  <p class="main-list-milage">25000 km</p>
+                  <h5>Colombo Car Association</h5>
+                  <p class="main-list-price">Rs. 250,000/=</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        <div class="row main-list-div">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/car1.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="auto">
+                </div>
+                <div class="col-md-8">
+                  <h4 class="main-list-heading">Bugatti Veyron EB 16.4</h4>
+                  <p class="main-list-milage">25000 km</p>
+                  <h5>Colombo Car Association</h5>
+                  <p class="main-list-price">Rs. 250,000/=</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row main-list-div">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="images/car1.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="auto">
+                  </div>
+                  <div class="col-md-8">
+                    <h4 class="main-list-heading">Bugatti Veyron EB 16.4</h4>
+                    <p class="main-list-milage">25000 km</p>
+                    <h5>Colombo Car Association</h5>
+                    <p class="main-list-price">Rs. 250,000/=</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="pagination pagination-sm">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                      </ul>
+                </div>
+
+            </div>
+
       </div>
     </div>
   </div>
@@ -327,14 +387,14 @@
 
 
   <script>
-      var slider = document.getElementById("myRange");
-      var output = document.getElementById("demo");
-      output.innerHTML = slider.value;
-      
-      slider.oninput = function() {
-        output.innerHTML = this.value;
-      }
-      </script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+  </script>
 
 </body>
 
