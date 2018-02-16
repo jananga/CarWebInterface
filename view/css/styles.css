@@ -383,4 +383,53 @@ h5 .chat-a{
     cursor: pointer;
     color: #01233b;
 }
+
+
+/* full description :start */
+.ui-price-tag {
+    /* position: relative; */
+    z-index: 1;
+    display: inline-block;
+    color: #2f3432;
+    background: #ffc800;
+    border: solid 1px #dcb300;
+    border-width: 1px 0;
+    padding: 7px;
+    /* margin-top: 10px;  */
+    margin: 10px 10px 10px 30px;
+
+    /* background: linear-gradient(#5FA309, #3B8018);
+    position: relative;
+    line-height: 30px; */
+    
+    /* line-height: 0%; width: 0px;
+border-top: 10px solid red;
+border-bottom: 10px solid #fc0;
+border-right: 40px solid green; */
+}
+
+/* .ui-price-tag::after{
+    content: '';
+    background: linear-gradient(top left, #5FA309, #3B8018);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px; right: -11px;
+    width: 21px;
+    height: 21px;
+} */
+
+.desc-content-text{
+
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 10px 10px 30px;
+}
+
+.table-desc{
+    font-size: 14px;
+}
+
+
+/* full description :end */
+
 /* description page :end */
