@@ -349,11 +349,28 @@ color: #1f79ba;
     vertical-align: middle;
 }
 
+.col-md-auto{
+    margin: 5px auto;
+}
+
 /* right panel :end */
 
 
 /* description page :start */
 .desc-text{
-    font-size: 2.8vh;
+    font-size:14px;
 }
+
+.desc-right-content{
+    border-top: 1px solid #e1e8e9;
+    border-bottom: 1px solid #e1e8e9;
+}
+
+.font-rounded{
+    /* margin-top: 3px; */
+    border-radius: 40px;
+    border: 1px solid rgb(89, 165, 105);
+    padding: 7px;
+}
+
 /* description page :end */
