@@ -373,4 +373,14 @@ color: #1f79ba;
     padding: 7px;
 }
 
+h5 .chat-a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #01233b;
+}
+.chat-a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #01233b;
+}
 /* description page :end */
