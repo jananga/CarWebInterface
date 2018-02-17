@@ -433,3 +433,43 @@ border-right: 40px solid green; */
 /* full description :end */
 
 /* description page :end */
+
+
+/* login :start */
+
+.login-tab-content{
+
+    padding: 40px;
+
+}
+
+.login-tab-content h4{
+
+    margin-top: 25px;
+}
+ 
+.for-a a, .for-a ap{
+    font-size: 16px;
+    color: #034777;
+
+}
+
+.for-a a:hover, .for-a p:hover{
+    font-size: 16px;
+    color: #0068b3;
+    text-decoration: none;
+
+} 
+
+ 
+/* login :end */
+
+
+/* forget email :start */
+
+
+.for-a h5{
+    font-size: 16px;
+}
+
+/* forget email :end */
